@@ -7,17 +7,16 @@
  */
 
 import React from 'react';
-import { Text, View } from 'react-native';
-
+import {ThemeProvider} from 'styled-components';
+import theme from './styles/theme';
+import Home from './views/Home';
 
 const App: React.FC = () => {
   return (
-    <View>
-      <Text>
-        Olá Mundo
-      </Text>
-    </View>
-  )
-}
+    <ThemeProvider theme={theme}>
+      <Home />
+    </ThemeProvider>
+  );
+};
 
 export default App;
