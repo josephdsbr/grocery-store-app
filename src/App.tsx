@@ -6,16 +6,20 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import 'react-native-gesture-handler';
+ import React from 'react';
 import {ThemeProvider} from 'styled-components';
 import theme from './styles/theme';
-import Home from './views/Home';
+import Navigation from './navigation/navigation';
+import {NavigationContainer} from '@react-navigation/native';
 
 const App: React.FC = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <Home />
-    </ThemeProvider>
+    <NavigationContainer>
+      <ThemeProvider theme={theme}>
+        <Navigation />
+      </ThemeProvider>
+    </NavigationContainer>
   );
 };
 
