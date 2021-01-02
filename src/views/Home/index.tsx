@@ -1,11 +1,11 @@
 import React from 'react';
-import {Text} from 'react-native';
 import {Container} from './styles';
+import Logo from '../../assets/logo.svg';
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <Text>José</Text>
+      <Logo />
     </Container>
   );
 };
