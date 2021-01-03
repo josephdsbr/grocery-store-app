@@ -24,7 +24,7 @@ const OnBoarding: React.FC<OnBoardingScreenProps> = (props) => {
           <Logo />
           <Title>Welcome to our Store</Title>
           <SubTitle>Get your groceries in as fast as one hour</SubTitle>
-          <ForwardButton onPress={() => navigation.push('Home')}>
+          <ForwardButton onPress={() => navigation.push('SignIn')}>
             <ButtonText>Get Started</ButtonText>
           </ForwardButton>
         </Content>
