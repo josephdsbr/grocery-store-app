@@ -3,6 +3,7 @@ import {
   ActionContent,
   BagImage,
   Container,
+  Content,
   FacebookSignInBtn,
   GoogleSignInBtn,
   Input,
@@ -14,17 +15,19 @@ const SignIn: React.FC = () => {
   return (
     <Container>
       <BagImage source={require('../../assets/food-bag.png')} />
-      <Title>Get your groceries with nectar</Title>
-      <Input />
-      <SubTitle>Or connect with Social Media</SubTitle>
-      <ActionContent>
-        <GoogleSignInBtn type="google" title="Continue with Google" button />
-        <FacebookSignInBtn
-          type="facebook"
-          title="Continue with Facebook"
-          button
-        />
-      </ActionContent>
+      <Content>
+        <Title>Get your groceries with nectar</Title>
+        <Input keyboardType="numeric" />
+        <SubTitle>Or connect with Social Media</SubTitle>
+        <ActionContent>
+          <GoogleSignInBtn type="google" title="Continue with Google" button />
+          <FacebookSignInBtn
+            type="facebook"
+            title="Continue with Facebook"
+            button
+          />
+        </ActionContent>
+      </Content>
     </Container>
   );
 };
