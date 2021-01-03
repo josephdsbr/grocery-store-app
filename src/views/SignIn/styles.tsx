@@ -21,12 +21,14 @@ export const Content = styled.View`
 export const Title = styled.Text`
   font-size: 23px;
   width: 60.86%;
+  font-family: 'Gilroy-Bold';
 `;
 
 export const Input = styled(TextInputMask)`
   font-size: 17px;
   border-bottom-width: 1px;
   border-bottom-color: #e2e2e2;
+  font-family: 'Gilroy-Regular';
 `;
 
 export const SubTitle = styled.Text`
