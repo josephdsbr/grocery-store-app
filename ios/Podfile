@@ -23,6 +23,8 @@ target 'GroceryApp' do
   post_install do |installer|
     flipper_post_install(installer)
   end
+  use_frameworks!
+  pod 'RNInputMask', :path => '../node_modules/react-native-text-input-mask/ios/InputMask'
 end
 
 target 'GroceryApp-tvOS' do

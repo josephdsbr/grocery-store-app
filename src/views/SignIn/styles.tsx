@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import {SocialIcon} from 'react-native-elements';
+import TextInputMask from 'react-native-text-input-mask';
 
 export const Container = styled.SafeAreaView`
   height: 100%;
@@ -22,7 +23,7 @@ export const Title = styled.Text`
   width: 60.86%;
 `;
 
-export const Input = styled.TextInput`
+export const Input = styled(TextInputMask)`
   font-size: 17px;
   border-bottom-width: 1px;
   border-bottom-color: #e2e2e2;

@@ -17,7 +17,7 @@ const SignIn: React.FC = () => {
       <BagImage source={require('../../assets/food-bag.png')} />
       <Content>
         <Title>Get your groceries with nectar</Title>
-        <Input keyboardType="numeric" />
+        <Input keyboardType="numeric" mask={'([00]) 9 [0000]-[0000]'} />
         <SubTitle>Or connect with Social Media</SubTitle>
         <ActionContent>
           <GoogleSignInBtn type="google" title="Continue with Google" button />
