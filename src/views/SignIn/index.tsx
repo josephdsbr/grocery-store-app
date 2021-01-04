@@ -10,8 +10,13 @@ import {
   SubTitle,
   Title,
 } from './styles';
+import {connect, useDispatch, useSelector} from 'react-redux';
+import {ApplicationState} from '../../store';
+import { signInRequest } from '../../store/modules/auth/auth.actions'
 
 const SignIn: React.FC = () => {
+  const auth = useSelector((state: ApplicationState) => state.auth);
+  const dispatch = useDispatch();
   return (
     <Container>
       <BagImage source={require('../../assets/food-bag.png')} />
@@ -32,4 +37,8 @@ const SignIn: React.FC = () => {
   );
 };
 
-export default SignIn;
+const mapStateToProps = (state: ApplicationState) => ({
+  auth: state.auth,
+});
+
+export default connect()(SignIn);
